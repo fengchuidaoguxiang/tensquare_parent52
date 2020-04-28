@@ -1,0 +1,17 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: tensquare-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/red_dust_game_player/tensquare_dev84.git
+  rabbitmq:
+    host: 192.168.79.176
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

@@ -5,7 +5,7 @@ spring:
     name: tensquare-article #指定服务名
   datasource:  
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.79.165:3306/tensquare_article?characterEncoding=UTF8
+    url: jdbc:mysql://192.168.79.176:3306/tensquare_article?characterEncoding=UTF8
     username: root
     password: root
   jpa: 
@@ -13,3 +13,9 @@ spring:
     show-sql: true
   redis:
     host: 192.168.79.165
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true

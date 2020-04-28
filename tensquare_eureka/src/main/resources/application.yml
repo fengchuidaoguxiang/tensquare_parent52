@@ -1,5 +1,0 @@
-server:
-  port: 6868
-eureka:
-  client:
-    register-with-eureka: false
